@@ -1,0 +1,21 @@
+// ### Groovy Sample ###
+
+number = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount();
+layout = com.liferay.portal.kernel.service.LayoutLocalServiceUtil.getLayout(32116);
+user = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUser(20404);
+locale = user.getLocale();
+//out.println(layout);
+//out.println(locale);
+customBreadcrumbEntries = com.liferay.sample.service.api.CustomBreadcrumbUtil.getCustomBreadcrumbEntries(layout,locale);
+out.println(customBreadcrumbEntries[1].getTitle());
+
+
+
+number = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount();
+layout = com.liferay.portal.kernel.service.LayoutLocalServiceUtil.getLayout(32116);
+user = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUser(20404);
+locale = user.getLocale();
+//out.println(layout);
+//out.println(locale);
+customBreadcrumbEntries = com.liferay.sample.service.api.CustomBreadcrumbUtil.getCustomBreadcrumbEntries(layout,locale);
+out.println(customBreadcrumbEntries.size());
